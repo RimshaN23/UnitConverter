@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context="com.urbcreations.unitconverter.Temprature"
+    >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temprature Converter"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cTof"
+        android:layout_below="@id/tv"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:elevation="5dp"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From C to F"
+                android:layout_margin="7dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_CToF"
+                android:layout_below="@id/tv2"
+                android:layout_width="200dp"
+                android:inputType="numberDecimal"
+                android:layout_margin="9dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:hint="enter number"
+                >
+            </EditText>
+
+            <Button
+                android:id="@+id/converttoF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="9dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="Convert">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/temp_ans1"
+                android:layout_below="@id/et_CToF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+
+                >
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/FToC"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/cTof"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp"
+        android:padding="8dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From F to C"
+                android:layout_margin="7dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_FToC"
+                android:layout_below="@id/tv3"
+                android:layout_width="200dp"
+                android:inputType="numberDecimal"
+                android:layout_margin="9dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:hint="enter number"
+                >
+            </EditText>
+
+            <Button
+                android:id="@+id/cobverttoC"
+                android:layout_below="@id/tv3"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="9dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="Convert">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/temp_ans2"
+                android:layout_below="@id/et_FToC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+
+                >
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
